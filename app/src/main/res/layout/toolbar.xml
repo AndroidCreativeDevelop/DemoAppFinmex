@@ -5,10 +5,11 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="50dp"
+
     android:background="@color/Componentes"
-    app:popupTheme="@styles/AppTheme"
     app:layout_scrollFlags="scroll|enterAlways"
     app:layout_collapseMode="pin">
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
