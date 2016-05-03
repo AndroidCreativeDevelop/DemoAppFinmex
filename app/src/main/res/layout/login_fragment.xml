@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario de Acceso"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/txtColor"
+            />
+        <EditText
+            android:id="@+id/Usuario"
+            android:maxLength="50"
+            android:background="@drawable/border_edit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/txtColor"
+            />
+        <EditText
+            android:id="@+id/Contraseña"
+            android:maxLength="40"
+            android:background="@drawable/border_edit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

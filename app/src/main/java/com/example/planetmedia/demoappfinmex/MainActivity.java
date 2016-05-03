@@ -1,11 +1,17 @@
 package com.example.planetmedia.demoappfinmex;
 
 import android.app.Activity;
+
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.planetmedia.demoappfinmex.fragments.LoginFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +22,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(tb);
+        Fragment fragment = new LoginFragment();
+        FragmentManager frag = this.getSupportFragmentManager();
+        FragmentTransaction ft = frag.beginTransaction();
+        ft.add(R.id.container,fragment);
+
+
+
+
+
 
     }
 

@@ -4,5 +4,6 @@
     <color name="Componentes">#56b6e1</color>
     <color name="Cabecera">#0088ce</color>
     <color name="Decendet">#002f76</color>
+    <color name="txtColor">#555555</color>
 
 </resources>
