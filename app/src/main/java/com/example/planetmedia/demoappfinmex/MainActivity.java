@@ -1,13 +1,23 @@
 package com.example.planetmedia.demoappfinmex;
 
 import android.app.Activity;
+
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.planetmedia.demoappfinmex.fragments.LoginFragment;
+import com.example.planetmedia.demoappfinmex.fragments.SolicitudFragment;
+
 public class MainActivity extends AppCompatActivity {
+    Fragment fragment;
+    FragmentManager frag;
+    FragmentTransaction ft;
 
 
     @Override
@@ -16,6 +26,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(tb);
+        fragment = new LoginFragment();
+        frag = this.getSupportFragmentManager();
+        ft = frag.beginTransaction();
+        ft.add(R.id.container, fragment);
+        ft.commit();
+        fragment= new SolicitudFragment();
+        frag = this.getSupportFragmentManager();
+        ft = frag.beginTransaction();
+        ft.add(R.id.container2, fragment);
+        ft.commit();
 
     }
 

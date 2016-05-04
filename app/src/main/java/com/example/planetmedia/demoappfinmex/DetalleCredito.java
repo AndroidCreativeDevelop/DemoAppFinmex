@@ -19,14 +19,12 @@ import com.example.planetmedia.demoappfinmex.Adaptadores.PagerAdapterCredito;
 
 public class DetalleCredito extends AppCompatActivity {
 
-    String TITLES[] = {"Atenciòn al cliente","Sucursales","Contàctanos"};
-    int ICONS[] = {R.drawable.ic_earphone,R.drawable.ic_coordinates,R.drawable.ic_telephone};
+    String TITLES[] = {"Atención al cliente","Sucursales","Contáctanos","Cerrar Sesión"};
+    int ICONS[] = {R.drawable.ic_earphone,R.drawable.ic_coordinates,R.drawable.ic_telephone,R.drawable.ic_logout};
 
-    String NAME = "Akash Bangad";
-    String EMAIL = "akash.bangad@android4devs.com";
-    int PROFILE = R.drawable.ic_user;
-
-    private Toolbar toolbar;                              // Declaring the Toolbar Object
+    String NAME = "Eduardo Partida";
+    String EMAIL = "eduardo.partida@android.com";
+    int PROFILE = R.drawable.usuario;
 
     RecyclerView mRecyclerView;                           // Declaring RecyclerView
     RecyclerView.Adapter mAdapter;                        // Declaring Adapter For Recycler View
@@ -84,7 +82,6 @@ public class DetalleCredito extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("ADMINISTRACIÒN"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         tabLayout.setSelectedTabIndicatorColor(Color.parseColor("#002f76"));
-        tabLayout.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         final PagerAdapterCredito adapter = new PagerAdapterCredito
