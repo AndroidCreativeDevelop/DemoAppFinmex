@@ -12,8 +12,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.planetmedia.demoappfinmex.fragments.LoginFragment;
+import com.example.planetmedia.demoappfinmex.fragments.SolicitudFragment;
 
 public class MainActivity extends AppCompatActivity {
+    Fragment fragment;
+    FragmentManager frag;
+    FragmentTransaction ft;
 
 
     @Override
@@ -22,15 +26,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(tb);
-        Fragment fragment = new LoginFragment();
-        FragmentManager frag = this.getSupportFragmentManager();
-        FragmentTransaction ft = frag.beginTransaction();
-        ft.add(R.id.container,fragment);
-
-
-
-
-
+        fragment = new LoginFragment();
+        frag = this.getSupportFragmentManager();
+        ft = frag.beginTransaction();
+        ft.add(R.id.container, fragment);
+        ft.commit();
+        fragment= new SolicitudFragment();
+        frag = this.getSupportFragmentManager();
+        ft = frag.beginTransaction();
+        ft.add(R.id.container2, fragment);
+        ft.commit();
 
     }
 

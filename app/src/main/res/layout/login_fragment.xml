@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@color/BackColor"
     android:layout_width="match_parent" android:layout_height="wrap_content">
 
     <LinearLayout
+
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,16 +15,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Usuario de Acceso"
-            android:textSize="20dp"
+            android:textSize="11dp"
             android:textStyle="bold"
             android:textColor="@color/txtColor"
             />
         <EditText
             android:id="@+id/Usuario"
             android:maxLength="50"
+            android:paddingLeft="5dp"
             android:background="@drawable/border_edit"
             android:layout_width="match_parent"
-            android:layout_height="45dp" />
+            android:layout_height="35dp" />
 
     </LinearLayout>
 
@@ -34,17 +38,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Contraseña:"
-            android:textSize="20dp"
+            android:textSize="11dp"
             android:textStyle="bold"
             android:textColor="@color/txtColor"
             />
         <EditText
             android:id="@+id/Contraseña"
             android:maxLength="40"
+            android:paddingLeft="5dp"
+
             android:background="@drawable/border_edit"
             android:layout_width="match_parent"
-            android:layout_height="45dp" />
+            android:layout_height="35dp" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/button_init"
+            android:textColor="@color/BackColor"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Inicio"/>
+
+    </LinearLayout>
+
+
 
 </LinearLayout>
