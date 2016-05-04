@@ -21,5 +21,9 @@
         <item name="android:colorAccent">@color/Decendet</item>|||||||
     </style>
 
+    <style name="MyCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">11sp</item>
+    </style>
+
 
 </resources>

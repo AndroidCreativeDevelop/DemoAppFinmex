@@ -31,7 +31,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
 
                 Intent mainIntent = new Intent().setClass(
-                        SplashActivity.this, MainActivity.class);
+                        SplashActivity.this, DetalleCredito.class);
                 startActivity(mainIntent);
 
                 finish();
