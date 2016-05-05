@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:background="@color/BackColor"
+    android:layout_margin="1dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+       <ImageView
+           android:src="@drawable/mail"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+
+           />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/txtColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contáctanos"
+            />
+
+    </LinearLayout>
+
+    <View
+    android:background="@color/ColorButton"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    />
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@drawable/phone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/txtColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centro de Atención"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/ColorButton"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@drawable/coordinates"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/txtColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sucursales"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

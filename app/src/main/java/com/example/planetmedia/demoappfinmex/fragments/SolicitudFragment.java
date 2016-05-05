@@ -42,7 +42,7 @@ public class SolicitudFragment extends Fragment {
         barPlazo.setProgressColor(getResources().getColor(R.color.Decendet));
         barPlazo.setProgressBackgroundColor(getResources().getColor(R.color.Componentes));
 
-        barPlazo.setMax(2000);
+        barPlazo.setMax(24);
 
         // --------------------------------------------------------------------------------------------------------------
 
@@ -50,7 +50,7 @@ public class SolicitudFragment extends Fragment {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 System.out.println("Numero de plazo" + barPlazo.getProgress());
-                Plazo.setText("$ " + Double.parseDouble(barPlazo.getProgress() + ""));
+                Plazo.setText(barPlazo.getProgress() + " MESES");
             }
 
             @Override
