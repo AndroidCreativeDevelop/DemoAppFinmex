@@ -1,4 +1,4 @@
-package com.example.planetmedia.demoappfinmex.Adaptadores;
+package com.example.planetmedia.demoappfinmex.adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

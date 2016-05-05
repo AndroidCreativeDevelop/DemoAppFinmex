@@ -1,12 +1,12 @@
-package com.example.planetmedia.demoappfinmex.Adaptadores;
+package com.example.planetmedia.demoappfinmex.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.example.planetmedia.demoappfinmex.Fragmentos.fragment_inicio;
-
+import com.example.planetmedia.demoappfinmex.fragments.AdministracionFragment;
+import com.example.planetmedia.demoappfinmex.fragments.CreditosFragment;
+import com.example.planetmedia.demoappfinmex.fragments.MisCuentasFragment;
 
 /**
  * Created by PlanetMedia on 03/05/2016.
@@ -25,13 +25,13 @@ public class PagerAdapterCredito extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                fragment_inicio tab1 = new fragment_inicio();
+                MisCuentasFragment tab1 = new MisCuentasFragment();
                 return tab1;
             case 1:
-                fragment_inicio tab2 = new fragment_inicio();
+                CreditosFragment tab2 = new CreditosFragment();
                 return tab2;
             case 2:
-                fragment_inicio tab3 = new fragment_inicio();
+                AdministracionFragment tab3 = new AdministracionFragment();
                 return tab3;
 
             default:

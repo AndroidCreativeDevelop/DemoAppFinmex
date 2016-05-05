@@ -10,12 +10,10 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 
-import com.example.planetmedia.demoappfinmex.Adaptadores.DrawerAdapter;
-import com.example.planetmedia.demoappfinmex.Adaptadores.PagerAdapterCredito;
+import com.example.planetmedia.demoappfinmex.adapters.DrawerAdapter;
+import com.example.planetmedia.demoappfinmex.adapters.PagerAdapterCredito;
 
 public class DetalleCredito extends AppCompatActivity {
 
