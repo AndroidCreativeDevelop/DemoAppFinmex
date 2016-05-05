@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="blanco">#ffffff</color>
+    <color name="negro">#000000</color>
+    <color name="txtColor">#555555</color>
+    <color name="BacGround_LesBlue">#ced9e5</color>
+    <color name="separador_menu">#e1e7ee</color>
+
     <color name="Componentes">#56b6e1</color>
     <color name="Cabecera">#0088ce</color>
     <color name="Decendet">#002f76</color>
-    <color name="txtColor">#555555</color>
     <color name="BackColor">#ffffff</color>
     <color name="ColorButton">#002b77</color>
     <color name="BacGround_Gray">#cbc4bc</color>
     <color name="BacGround_Blue">#a7c6ed</color>
-    <color name="BacGround_LesBlue">#ced9e5</color>
 
 </resources>
