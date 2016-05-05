@@ -79,7 +79,6 @@ public class DetalleCredito extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("CRÈDITOS"));
         tabLayout.addTab(tabLayout.newTab().setText("ADMINISTRACIÒN"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-        tabLayout.setSelectedTabIndicatorColor(Color.parseColor("#002f76"));
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         final PagerAdapterCredito adapter = new PagerAdapterCredito

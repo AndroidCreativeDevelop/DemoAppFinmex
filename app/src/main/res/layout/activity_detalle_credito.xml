@@ -22,7 +22,8 @@
             android:layout_height="wrap_content"
             app:tabSelectedTextColor="@color/Decendet"
             app:tabTextColor="@color/Componentes"
-            app:tabTextAppearance="@style/MyCustomTabText"/>
+            app:tabTextAppearance="@style/MyCustomTabText"
+            app:tabIndicatorColor="@color/Decendet"/>
 
         <FrameLayout
             android:layout_width="wrap_content"
