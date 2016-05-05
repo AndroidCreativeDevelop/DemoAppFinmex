@@ -121,22 +121,14 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
 
 
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-        try{
-            locationManager.addGpsStatusListener(this);
-        }
-        catch (SecurityException e){
-            FailedException =true;
-        }
-        if (FailedException)
         ValidarGps = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
-        else
-        ValidarGps=false;
+        locationManager.addGpsStatusListener(this);
+
 
         if(ValidarGps){
             getmap();
-        }else if (FailedException){
+        }else{
             System.out.println("Provider Disable");
-
             boolean Acercar = false;
             getmap();
 
@@ -201,19 +193,15 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
             criteria.setPowerRequirement(Criteria.POWER_HIGH);
 
             // Getting the name of the best provider
-            String provider = locationManager.getBestProvider(criteria,false);
+            String provider = locationManager.getBestProvider(criteria,true);
 
             if(getLastKnownLocation()!=null){
                 System.out.println("is not null tha last location");
                 onLocationChanged(getLastKnownLocation());
             }
-            try{
-                locationManager.requestLocationUpdates(provider, 0, 0, this);
-            }catch (SecurityException | NullPointerException e){
-                System.out.println("Location Manager "+ e.getMessage());
-                Toast.makeText(Act, "Turn On The GPS!!",
-                        Toast.LENGTH_LONG).show();
-            }
+
+                locationManager.requestLocationUpdates(provider, 20000, 0, this);
+
 
         }
     }
@@ -265,36 +253,30 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
 
     //------------------------------------------------- Location
 
+
+
     public Location getLastKnownLocation() {
 
         List<String> providers = locationManager.getProviders(true);
         Location bestLocation = null;
         for (String provider : providers) {
-            try{
-                Location l = locationManager.getLastKnownLocation(provider);
-                if (l == null) {
-                    continue;
-                }
-                if (bestLocation == null
-                        || l.getAccuracy() < bestLocation.getAccuracy()) {
-                    bestLocation = l;
-                }
+            Location l = locationManager.getLastKnownLocation(provider);
+
+            if (l == null) {
+                continue;
             }
-            catch (SecurityException | NullPointerException   e){
-                System.out.println("Segurity Exception " + e.getMessage());
-
-                Toast.makeText(Act, "Turn On The GPS!!",
-                        Toast.LENGTH_LONG).show();
+            if (bestLocation == null
+                    || l.getAccuracy() < bestLocation.getAccuracy()) {
+                bestLocation = l;
             }
-
-
         }
         if (bestLocation == null) {
-            System.out.println("Segurity Exception Null Provider ");
             return null;
         }
         return bestLocation;
     }
+
+
 
 
 
