@@ -25,5 +25,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.pavelsikun:material-seekbar-preference:0.12.1+'
     compile 'com.minimize.library:seekbar-compat:0.2.5'
+    compile 'com.google.android.gms:play-services:8.1.0'
 
 }
