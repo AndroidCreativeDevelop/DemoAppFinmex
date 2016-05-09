@@ -1,6 +1,5 @@
 package com.example.planetmedia.demoappfinmex;
 
-import android.graphics.Color;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -15,7 +14,7 @@ import android.view.View;
 import com.example.planetmedia.demoappfinmex.adapters.DrawerAdapter;
 import com.example.planetmedia.demoappfinmex.adapters.PagerAdapterCredito;
 
-public class DetalleCredito extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     String TITLES[] = {"Atención al cliente","Sucursales","Contáctanos","Cerrar Sesión"};
     int ICONS[] = {R.drawable.ic_earphone,R.drawable.ic_coordinates,R.drawable.ic_telephone,R.drawable.ic_logout};
@@ -34,7 +33,7 @@ public class DetalleCredito extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalle_credito);
+        setContentView(R.layout.activity_home);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
