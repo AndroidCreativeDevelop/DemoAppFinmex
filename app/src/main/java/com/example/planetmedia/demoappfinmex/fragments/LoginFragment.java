@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.example.planetmedia.demoappfinmex.DetalleCredito;
+import com.example.planetmedia.demoappfinmex.HomeActivity;
 import com.example.planetmedia.demoappfinmex.R;
 
 /**
@@ -28,7 +28,7 @@ public class LoginFragment extends Fragment {
         btn_inicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), DetalleCredito.class);
+                Intent intent = new Intent(getActivity(), HomeActivity.class);
                 startActivity(intent);
             }
         });
