@@ -3,6 +3,8 @@ package com.example.planetmedia.demoappfinmex.fragments;
 import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +15,9 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.planetmedia.demoappfinmex.ModeloMovimientos;
 import com.example.planetmedia.demoappfinmex.R;
+import com.example.planetmedia.demoappfinmex.adapters.recycler_movimientos_adapter;
 
 import org.w3c.dom.Text;
 
@@ -30,6 +34,8 @@ public class MisCuentasFragment extends Fragment {
     TextView numFechaFin;
     ImageView ic_cal1;
     ImageView ic_cal2;
+    RecyclerView recycler_movimientos;
+    ModeloMovimientos[] modelo;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -61,7 +67,7 @@ public class MisCuentasFragment extends Fragment {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 1){
+                if (position == 1) {
 
                     txtFechaInicio = (TextView) v.findViewById(R.id.txtFechaInicio);
                     txtFechaInicio.setVisibility(View.VISIBLE);
@@ -120,6 +126,17 @@ public class MisCuentasFragment extends Fragment {
 
             }
         });
+
+        modelo = new ModeloMovimientos[25];
+        int y = 0;
+        for (int i = 0; i < 25; i ++){
+            modelo[i] = new ModeloMovimientos("Finmex", "ARW-00001234", "AMORTIZACION EN VENTANILLA", "$14,920.00" + y++);
+        }
+
+        recycler_movimientos = (RecyclerView)v.findViewById(R.id.recycler_movimientos);
+        recycler_movimientos.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
+        recycler_movimientos.setAdapter(new recycler_movimientos_adapter(modelo, getActivity()));
+
 
         return v;
     }
