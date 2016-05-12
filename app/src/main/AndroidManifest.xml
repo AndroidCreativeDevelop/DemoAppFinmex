@@ -6,7 +6,7 @@
         android:name="com.example.planetmedia.demoappfinmex.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.planetmedia.demoappfinmex.permission.MAPS_RECEIVE" />
+
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -28,7 +28,8 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_splash" >
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="portrait">
         </activity>
 
         <meta-data
@@ -40,11 +41,14 @@
 
         <activity
             android:name=".HomeActivity"
-            android:label="@string/title_activity_detalle_credito" >
+            android:label="@string/title_activity_detalle_credito"
+            android:screenOrientation="portrait">
         </activity>
+
         <activity
-            android:name=".MovimientosActivity"
-            android:label="@string/title_activity_movimientos" >
+            android:name=".Activity_ConsultaCreditos"
+            android:label="@string/title_activity_movimientos"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
