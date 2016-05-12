@@ -3,131 +3,116 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
-    android:orientation="vertical"
-    tools:context="com.example.planetmedia.demoappfinmex.fragments.MisCuentasFragment">
+    tools:context="com.example.planetmedia.demoappfinmex.MovimientosActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MOVIMIENTOS"
+        android:textColor="@color/txtColor"
+        android:textSize="16dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CONSOLIDADO DE CUENTAS"
-            android:textColor="@color/txtColor"
-            android:textStyle="bold"
-            android:textSize="16dp"/>
-
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_margin="10dp"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.8"
-                android:text="Crédito"
-                android:textColor="@color/Cabecera"
+                android:text="Visualizar:"
+                android:textColor="@color/txtColor"
                 android:textSize="12dp"/>
 
-            <TextView
-                android:layout_width="0dp"
+            <Spinner
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Producto"
-                android:textColor="@color/Cabecera"
-                android:textSize="12dp"/>
+                android:layout_marginLeft="5dp"
+                android:id="@+id/spinner">
+
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
 
             <TextView
-                android:layout_width="0dp"
+                android:id="@+id/txtFechaInicio"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.6"
-                android:text="Alias"
-                android:textColor="@color/Cabecera"
-                android:textSize="12dp"/>
+                android:text="Fecha Inicio:"
+                android:textColor="@color/txtColor"
+                android:textSize="12dp" />
 
             <TextView
-                android:layout_width="0dp"
+                android:id="@+id/numFechaInicio"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.8"
-                android:text="Saldo insoluto"
-                android:textColor="@color/Cabecera"
-                android:id="@+id/txt_fecaVenc"
+                android:text="10-05-2016"
+                android:textColor="@color/txtColor"
+                android:layout_marginLeft="5dp"
                 android:textSize="12dp"/>
 
-            <TextView
-                android:id="@+id/txtInt"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Saldo disponible"
-                android:textColor="@color/Cabecera"
-                android:textSize="12dp"/>
+            <ImageView
+                android:id="@+id/ic_cal1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_calendario"/>
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Monto a liquidar"
-                android:textColor="@color/Cabecera"
-                android:id="@+id/txtTotal"
-                android:textSize="12dp"/>
 
         </LinearLayout>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_creditos"
-            android:layout_height="250dp"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="35dp"/>
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Saldos totales:"
-            android:textColor="@color/Cabecera"
-            android:textSize="12dp"/>
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="$98,853.18"
-            android:textColor="@color/Cabecera"
-            android:textSize="12dp"/>
+            <TextView
+                android:id="@+id/txtFechaFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha Fin:"
+                android:textColor="@color/txtColor"
+                android:textSize="12dp"/>
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="$50,000.00"
-            android:textColor="@color/Cabecera"
-            android:textSize="12dp"/>
+            <TextView
+                android:id="@+id/numFechaFin"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="15-05-2016"
+                android:textColor="@color/txtColor"
+                android:layout_marginLeft="5dp"
+                android:textSize="12dp"/>
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="$114,920.50"
-            android:textColor="@color/Cabecera"
-            android:textSize="12dp"/>
-
+            <ImageView
+                android:id="@+id/ic_cal2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_calendario"/>
+        </LinearLayout>
     </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_creditos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 
 </LinearLayout>
