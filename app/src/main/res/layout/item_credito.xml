@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/NumCredito"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Crédito"
+            android:textColor="@color/txtColor"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/ProductoCredito"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Producto"
+            android:textColor="@color/txtColor"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/AliasCredito"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="Alias"
+            android:textColor="@color/txtColor"
+            android:textSize="12dp"/>
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Saldo insoluto"
+            android:textColor="@color/txtColor"
+            android:id="@+id/SaldoInsoluto"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/SaldoDisponible"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Saldo disponible"
+            android:textColor="@color/txtColor"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/MontoLiquidar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Monto a liquidar"
+            android:textColor="@color/txtColor"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

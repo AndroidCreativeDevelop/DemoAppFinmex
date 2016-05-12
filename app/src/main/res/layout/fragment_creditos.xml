@@ -1,9 +1,88 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.planetmedia.demoappfinmex.fragments.CreditosFragment">
 
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp">
 
 
-</FrameLayout>
+          <TextView
+              android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="$98,853.18"
+              android:textSize="16dp"
+              android:textColor="@color/Decendet"/>
+
+          <TextView
+              android:paddingTop="50dp"
+              android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Saldo Pasivo"
+              android:textSize="13dp"
+              android:textColor="@color/txtColor"/>
+
+
+        <com.hookedonplay.decoviewlib.DecoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/SaldoPasivoGra"/>
+
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp">
+
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$99,853.18"
+                android:textSize="16dp"
+                android:textColor="@color/Decendet"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saldo Activo"
+                android:textSize="13dp"
+                android:textColor="@color/txtColor"/>
+
+
+
+
+        <com.hookedonplay.decoviewlib.DecoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/SaldoActivoGra"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

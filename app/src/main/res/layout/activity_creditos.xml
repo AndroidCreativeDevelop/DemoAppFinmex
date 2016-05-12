@@ -1,0 +1,150 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.example.planetmedia.demoappfinmex.fragments.MisCuentasFragment">7
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONSOLIDADO DE CUENTAS"
+            android:textColor="@color/txtColor"
+            android:textStyle="bold"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="Crédito"
+                android:textColor="@color/Cabecera"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Producto"
+                android:textColor="@color/Cabecera"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Alias"
+                android:textColor="@color/Cabecera"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="Saldo insoluto"
+                android:textColor="@color/Cabecera"
+                android:id="@+id/txt_fecaVenc"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/txtInt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Saldo disponible"
+                android:textColor="@color/Cabecera"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Monto a liquidar"
+                android:textColor="@color/Cabecera"
+                android:id="@+id/txtTotal"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_creditos"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Saldos totales:"
+            android:textColor="@color/Cabecera"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$98,853.18"
+            android:textColor="@color/Cabecera"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$50,000.00"
+            android:textColor="@color/Cabecera"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$114,920.50"
+            android:textColor="@color/Cabecera"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
