@@ -1,4 +1,4 @@
-package com.example.planetmedia.demoappfinmex;
+package com.example.planetmedia.demoappfinmex.Models;
 
 /**
  * Created by PlanetMedia on 12/05/2016.

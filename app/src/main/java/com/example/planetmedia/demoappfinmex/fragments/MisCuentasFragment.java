@@ -15,15 +15,11 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.example.planetmedia.demoappfinmex.ModeloMovimientos;
+import com.example.planetmedia.demoappfinmex.Models.ModeloMovimientos;
 import com.example.planetmedia.demoappfinmex.R;
 import com.example.planetmedia.demoappfinmex.adapters.recycler_movimientos_adapter;
 
-import org.w3c.dom.Text;
-
-import java.text.DateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 public class MisCuentasFragment extends Fragment {
     View v;

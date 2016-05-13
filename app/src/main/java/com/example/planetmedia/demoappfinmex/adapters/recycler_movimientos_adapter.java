@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.planetmedia.demoappfinmex.ModeloMovimientos;
+import com.example.planetmedia.demoappfinmex.Models.ModeloMovimientos;
 import com.example.planetmedia.demoappfinmex.R;
 
 /**
