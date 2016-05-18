@@ -56,15 +56,14 @@ public class MisCuentasFragment extends Fragment {
         spinner = (Spinner) v.findViewById(R.id.spinner);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                (this.getActivity(), android.R.layout.simple_spinner_item, paths);
-        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+                (this.getActivity(), R.layout.spinner_movimientos_item, paths);
+        adapter.setDropDownViewResource(R.layout.spinner_movimientos_dropdown);
 
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 1) {
-
                     txtFechaInicio = (TextView) v.findViewById(R.id.txtFechaInicio);
                     txtFechaInicio.setVisibility(View.VISIBLE);
                     txtFechaFin = (TextView) v.findViewById(R.id.txtFechaFin);
@@ -126,13 +125,12 @@ public class MisCuentasFragment extends Fragment {
         modelo = new ModeloMovimientos[25];
         int y = 0;
         for (int i = 0; i < 25; i ++){
-            modelo[i] = new ModeloMovimientos("Finmex", "ARW-00001234", "AMORTIZACION EN VENTANILLA", "$14,920.00" + y++);
+            modelo[i] = new ModeloMovimientos("Finmex", "ARW-00001234", "AMORTIZACION EN VENTANILLA", "$14,920.00");
         }
 
         recycler_movimientos = (RecyclerView)v.findViewById(R.id.recycler_movimientos);
         recycler_movimientos.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
         recycler_movimientos.setAdapter(new recycler_movimientos_adapter(modelo, getActivity()));
-
 
         return v;
     }
